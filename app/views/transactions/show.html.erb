@@ -1,0 +1,13 @@
+<div class="container text-center card">
+   <h1>Name:<%= @transaction.name %></h1>
+        <h3>Host: <%= @event.user.username.capitalize %></h3>
+        <h1>Attendee:</h1>
+        <% @transactions.each do |transaction| %>
+        <p><%= transaction.name%></p>
+        <% end %>
+    <hr>
+  
+    <p><%= link_to 'New event', new_transaction_path, class: 'btn btn-success' %></p>
+
+    <p><%= link_to 'Home', root_path, class: 'btn btn-warning' %></p>
+</div>

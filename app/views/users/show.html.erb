@@ -1,0 +1,24 @@
+<div class="container card mt-3">
+    <div class='row'>
+        <div class='col-6'>
+            <h1>Transactions you created:</h1>
+            <% @created_transactions.each do |transaction| %>
+            <p><strong>Host:</strong>
+                <%= transaction.user.username.capitalize %>
+            </p>
+            <p><strong>Transaction name:</strong>
+                <%= transaction.name %>
+            </p>
+            <p><strong>Amount:</strong>
+                <%= transaction.amount %>
+            </p>
+            <p><strong>Group:</strong>
+                <%= transaction.group.name %>
+            </p>
+            <% end %>
+        </div>
+
+        <p>
+            <%= link_to 'Back to Home', root_path, class: 'btn btn-warning ml-2' %>
+        </p>
+    </div>
