@@ -6,8 +6,7 @@ class GroupsController < ApplicationController
   end
 
   def show
-    @egroup = Group.find(params[:id])
-    #@attendees = User.all
+    @group = Group.find(params[:id])
   end
 
   def new

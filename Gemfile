@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'bootstrap'
 
+gem 'carrierwave', '~> 2.1'
+
 gem 'jquery-rails'
 
 group :development, :test do

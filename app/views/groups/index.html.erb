@@ -4,12 +4,11 @@
   <% end -%>  
   <div class = 'row'>
       <div class = 'col-10 card p-3 text-center'>
-          <h3>All Group</h3>
+          <h3>All Groups</h3>
               <% @groups.each do |group| %>
                   <p><strong>Name:</strong> <%= group.name %></p>
                   <p><strong>Icon:</strong> <%= group.icon %></p>
-                  <p><strong>Host:</strong> <%= group.user.username.capitalize %></p>
-                  <p><%= link_to 'Check attendee here', group_path(group), class: 'btn btn-warning' %> </p>
+                  <p><%= link_to 'ADD NEW', new_group_path, class: 'btn btn-warning' %> </p>
                   <hr>
               <% end %>
       </div>

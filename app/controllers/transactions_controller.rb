@@ -7,7 +7,6 @@ class TransactionsController < ApplicationController
 
   def show
     @transaction = Transaction.find(params[:id])
-    #@attendees = User.all
   end
 
   def new
@@ -27,6 +26,6 @@ class TransactionsController < ApplicationController
   private
 
   def transaction_params
-    params.require(:transaction).permit(:name, :amount)
+    params.require(:transaction).permit(:name, :amount, :group_id)
   end
 end

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg">
-  <%=link_to "Private Event", root_path, class: "navbar-brand text-white" %>
+  <%=link_to "Rails Capstone", root_path, class: "navbar-brand text-white" %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -12,6 +12,9 @@
       </li>
       <li class="nav-item active mr-4">
         <%= link_to "All transactions", root_path, class: "nav-link text-white" %>
+      </li> 
+      <li class="nav-item active mr-4">
+        <%= link_to "All Groups", groups_path, class: "nav-link text-white" %>
       </li> 
       <li class="nav-item mr-4">
       <%=link_to('Logout', logout_path, class: "btn btn-xs btn-danger shadow mr-3", method: :delete)%>

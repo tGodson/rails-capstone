@@ -14,7 +14,8 @@
 </div>
 <div class="form-group ">
   <%=f.label :group%>
-   <%= f.date_field :group, class: "form-control" %>
+  <%= f.collection_select :group_id, Group.all, :id, :name, prompt: true, class: "form-control" %>
+   
 </div>
   <div class="form-group">
     <%=f.submit "Create Transaction", class: "btn btn-success"%>
