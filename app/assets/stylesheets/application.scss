@@ -22,6 +22,10 @@ body {
   height: 100%;
 }
 
+img.icon {
+  height: 100px;
+  width: auto;
+}
 .navbar,
 .main-footer {
   background-image: linear-gradient(to bottom right, #133c68 , #2e80bc);

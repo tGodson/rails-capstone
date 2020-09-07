@@ -7,8 +7,8 @@
           <h3>All Groups</h3>
               <% @groups.each do |group| %>
                   <p><strong>Name:</strong> <%= group.name %></p>
-                  <p><strong>Icon:</strong> <%= group.icon %></p>
-                  <p><%= link_to 'ADD NEW', new_group_path, class: 'btn btn-warning' %> </p>
+                  <p><strong>Icon:</strong> <%= image_tag group.icon.url class: "icon" %></p>
+                  <p><%= link_to 'VIEW', new_group_path, class: 'btn btn-warning' %> </p>
                   <hr>
               <% end %>
       </div>
