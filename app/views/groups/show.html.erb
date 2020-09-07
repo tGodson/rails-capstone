@@ -1,10 +1,8 @@
 <div class="container text-center card">
-   <h1>Name:<%= @group.name %></h1>
+<h1>Group</h1>
         <h3>Host: <%= @group.user.username.capitalize %></h3>
-        <h1>Group:</h1>
-        <% @groups.each do |group| %>
-        <p><%= group.name%></p>
-        <% end %>
+        <h3>Group: <%= @group.name %></h3>
+        <h3>Icon: <%= image_tag @group.icon.url %></h3>
     <hr>
   
     <p><%= link_to 'New event', new_group_path, class: 'btn btn-success' %></p>

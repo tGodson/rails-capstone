@@ -25,7 +25,7 @@ class GroupsController < ApplicationController
 
   private
 
-  def event_params
+  def group_params
     params.require(:group).permit(:name, :icon)
   end
 end
