@@ -12,9 +12,13 @@ This Ruby on Rails capstone is based on an app for grouping payments by goal wit
 ## Prerequisites
 In order to make the program work, you need to have ruby interpreter installed in your system. You can get the latest version of ruby from [official website](https://www.ruby-lang.org/en/downloads/).
 
+## Screenshot
 
 ![Screenshot](app_screenshot.png)
 
+## Video presentation
+
+[Video presentation](https://www.loom.com/share/680758ba1eb64b9aa93180930152cc99)
 
 ## Getting Started 
 
