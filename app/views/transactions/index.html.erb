@@ -1,18 +1,17 @@
-<div class = "container mt-3">   
+<div class = "container mt-3"> 
+<h3>All Transactions</h3>  
+<% @transactions.order("id desc").each do |transaction| %>
   <div class = 'row'>
-      <div class = 'col-10 card p-3 text-center'>
-          <h3>All Transactions</h3>
-              <% @transactions.each do |transaction| %>
-                <% if logged_in? %>
-                    <p><strong>Host:</strong> <%= transaction.user.username.capitalize %></p>
-                <% end -%>
-                  <p><strong>Name:</strong> <%= transaction.name %></p>
-                  <p><strong>Amount:</strong> <%= transaction.amount %></p>
-                  <p><strong>Group:</strong> <%= transaction.group.name %></p>
-                  
-                  <hr>
-              <% end %>
+      <div class = 'col-10 card p-3 text-center'>       
+        <% if logged_in? %>
+            <p><strong>Host:</strong> <%= transaction.user.username.capitalize %></p>
+        <% end -%>
+          <p><strong>Transaction name:</strong> <%= transaction.name %></p>
+          <p><strong>Amount:</strong> $<%= transaction.amount %></p>
+          <p><strong>created at:</strong> <%= transaction.created_at %></p> 
       </div>
+    
    </div>
+   <% end %>
 </div>
       

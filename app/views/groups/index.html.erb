@@ -1,16 +1,16 @@
 <div class = "container mt-3"> 
-  <% if logged_in? %>
-    <%= link_to 'Create new Transaction', new_transaction_path, class: 'btn btn-success mb-2' %>
-  <% end -%>  
+   
+ <h3>All Groups</h3>
+    <%= link_to 'Create new Group', new_group_path, class: 'btn btn-success mb-2' %>
+  <% @groups.order("name asc").each do |group| %>
   <div class = 'row'>
-      <div class = 'col-10 card p-3 text-center'>
-          <h3>All Groups</h3>
-              <% @groups.each do |group| %>
-                  <p><strong>Name:</strong> <%= group.name %></p>
-                  <p><strong>Icon:</strong> <%= image_tag group.icon.url class: "icon" %></p>
-                  <p><%= link_to 'VIEW', group_path(group), class: 'btn btn-warning' %> </p>
-                  <hr>
-              <% end %>
-      </div>
-   </div>
+    <div class = 'col-10 card p-3 text-center'>
+      
+        <p><%= image_tag group.icon.url class: "icon" %></p>
+        <p><strong>Name:</strong> <%= group.name %></p>
+        <p><strong>Created At:</strong> <%= group.created_at %></p>
+        <p><%= link_to 'VIEW', group_path(group), class: 'btn btn-warning' %> </p>
+    </div>
+  </div>
+   <% end %>
 </div>
