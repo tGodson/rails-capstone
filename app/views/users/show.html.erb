@@ -1,5 +1,5 @@
 <div class="container mt-3">
-    <%= link_to 'ADD NEW', new_transaction_path, class: 'btn btn-warning mb-2' %>
+    <%= link_to 'ADD NEW', new_transaction_path, class: 'btn custom mb-2' %>
     <strong>TOTAL: $</strong><%= Transaction.where(:id => [@created_transactions] ).sum(:amount)%>
     <h1>Transactions you created:</h1>
     <% @created_transactions.order("id desc").each do |transaction| %>

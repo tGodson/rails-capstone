@@ -40,9 +40,13 @@ $ rails db:migrate
 
 _you can create a user by clicking on the signup button at the top right of your screen and fill the sign up form
 
-_You can sign In by clicking on the sign In button at the top right of your screen and filling the form
+_Sign In by clicking on the sign In button at the top right of your screen and filling the form
 
-_You can create an transaction when you are logged In by clicking on the `ADD NEW` Butoon at the bottom of `my transction page` and fill the form
+_To create a transaction, click on `My Transactions` menu and click `ADD NEW` button and fill the form
+
+_Add  a group by clicking on the `All Groups` menu then on the `ADD NEW` button
+
+_To view all transactions of a group, click on the `VIEW` button of that group
 
 ## Author
 
@@ -64,3 +68,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
  
 - [The Odin Project](https://www.theodinproject.com/)
+-  Original design idea by[Gregoire Vella on Behance](https://www.behance.net/gregoirevella)

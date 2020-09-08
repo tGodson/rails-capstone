@@ -20,6 +20,7 @@ html,
 body {
   background-color: #f1f3f2;
   height: 100%;
+  font-family: 'proxima nova light';
 }
 
 .row {
@@ -32,11 +33,11 @@ img.icon {
 }
 .navbar,
 .main-footer {
-  background-image: linear-gradient(to bottom right, #133c68 , #2e80bc);
+  background-image: linear-gradient(to bottom right, #3778c2 , #2e80bc);
 }
 
-.btn {
-    background-image: linear-gradient(to bottom right, #133c68 , #2e80bc);
+.custom {
+    background-color:#5fb523;
     color: white;
 }
 
@@ -59,7 +60,7 @@ img.icon {
 }
 
 h1 {
-  font-family: 'Handlee', cursive;
+  font-family: 'proxima nova bold';
 }
 
 .text-white {
