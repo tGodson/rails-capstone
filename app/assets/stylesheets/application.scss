@@ -32,8 +32,13 @@ img.icon {
   width: auto;
 }
 .navbar,
-.main-footer {
+.page-footer {
   background-image: linear-gradient(to bottom right, #3778c2 , #2e80bc);
+}
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .custom {

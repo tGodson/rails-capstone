@@ -20,6 +20,10 @@ In order to make the program work, you need to have ruby interpreter installed i
 
 [Video presentation](https://www.loom.com/share/680758ba1eb64b9aa93180930152cc99)
 
+## Live Demo
+
+[View live demo of app](https://mysterious-waters-29267.herokuapp.com/)
+
 ## Getting Started 
 
 1. clone the project
