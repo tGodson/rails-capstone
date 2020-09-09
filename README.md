@@ -3,7 +3,7 @@
 This Ruby on Rails capstone is based on an app for grouping payments by goal with your family/friends.
 
 ## Built With
-
+- Rubocop
 - Ruby 2.7.1
 - Rails 6.0.3.2
 - VS Code
