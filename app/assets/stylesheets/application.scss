@@ -20,7 +20,7 @@ html,
 body {
   background-color: #f1f3f2;
   height: 100%;
-  font-family: 'proxima nova light';
+  font-family: sans-serif, 'proxima nova light';
 }
 
 .row {
@@ -31,10 +31,12 @@ img.icon {
   height: 100px;
   width: auto;
 }
+
 .navbar,
 .page-footer {
-  background-image: linear-gradient(to bottom right, #3778c2 , #2e80bc);
+  background-image: linear-gradient(to bottom right, #3778c2, #2e80bc);
 }
+
 .page-footer {
   position: absolute;
   bottom: 0;
@@ -42,8 +44,8 @@ img.icon {
 }
 
 .custom {
-    background-color:#5fb523;
-    color: white;
+  background-color: #5fb523;
+  color: white;
 }
 
 .text-font {
@@ -65,7 +67,7 @@ img.icon {
 }
 
 h1 {
-  font-family: 'proxima nova bold';
+  font-family: sans-serif, 'proxima nova bold';
 }
 
 .text-white {

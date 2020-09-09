@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Group < ApplicationRecord
   mount_uploader :icon, AvatarUploader
   validates_presence_of :icon
