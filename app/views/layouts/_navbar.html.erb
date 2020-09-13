@@ -1,8 +1,30 @@
 <nav class="navbar navbar-expand-lg">
   <%=link_to "Rails Capstone", root_path, class: "navbar-brand text-white" %>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <!-- Collapse button -->
+  <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
+    aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
   </button>
+<%= link_to '<span class="glyphicon glyphicon-eye-open"></span>'.html_safe %>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent23">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <!-- Links -->
+
+  </div>
+  <!-- Collapsible content -->
 
   <div class="collapse navbar-collapse container " id="navbarNav">
     <% if logged_in?%>

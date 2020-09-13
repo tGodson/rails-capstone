@@ -21,6 +21,7 @@ body {
   background-color: #f1f3f2;
   height: 100%;
   font-family: sans-serif, 'proxima nova light';
+  position:relative;
 }
 
 .row {
@@ -38,7 +39,7 @@ img.icon {
 }
 
 .page-footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
