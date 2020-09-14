@@ -21,7 +21,22 @@ body {
   background-color: #f1f3f2;
   height: 100%;
   font-family: sans-serif, 'proxima nova light';
-  position:relative;
+  position: relative;
+
+}
+* {
+  box-sizing: border-box;
+ }
+ *:before,
+ *:after {
+  box-sizing: border-box;
+ }
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
 }
 
 .row {
@@ -39,9 +54,10 @@ img.icon {
 }
 
 .page-footer {
-  position: relative;
   bottom: 0;
   width: 100%;
+  position: absolute;
+ 
 }
 
 .custom {
