@@ -22,15 +22,16 @@ body {
   height: 100%;
   font-family: sans-serif, 'proxima nova light';
   position: relative;
-
 }
+
 * {
   box-sizing: border-box;
- }
- *:before,
- *:after {
+}
+
+*::before,
+*::after {
   box-sizing: border-box;
- }
+}
 
 .page-container {
   position: relative;
@@ -57,7 +58,6 @@ img.icon {
   bottom: 0;
   width: 100%;
   position: absolute;
- 
 }
 
 .custom {
