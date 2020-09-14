@@ -36,28 +36,26 @@ gem 'carrierwave', '~> 2.1'
 gem 'jquery-rails'
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'sqlite3', '~> 1.4'
   gem 'factory_bot_rails'
+  gem 'sqlite3', '~> 1.4'
 end
 
 group :development do
-  gem 'listen', '~> 3.2'
-  gem 'web-console', '>= 3.3.0'
-
-  gem 'factory_bot_rails'
   gem 'faker'
+  gem 'listen', '~> 3.2'
   gem 'spring'
   gem 'spring-commands-rspec'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'web-console', '>= 3.3.0'
 end
 
 group :test do
   gem 'capybara', '>= 2.15'
+  gem 'database_cleaner'
   gem 'launchy'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 3.1'
-  gem 'database_cleaner'
-  gem 'rspec-rails'
   gem 'webdrivers'
 end
 
