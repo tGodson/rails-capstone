@@ -6,7 +6,7 @@
   <div class = 'row'>
     <div class = 'col-10 card p-3 text-center'>
       
-        <p><%= image_tag group.icon.url class: "icon" %></p>
+        <p><%= image_tag group.icon if group.icon.attached? class: "icon" %></p>
         <p><strong>Name:</strong> <%= group.name %></p>
         <p><strong>Created At:</strong> <%= group.created_at %></p>
         <p><%= link_to 'VIEW', group_path(group), class: 'btn custom' %> </p>
