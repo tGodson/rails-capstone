@@ -16,6 +16,7 @@ gem 'guard-rspec'
 gem 'webpacker', '~> 4.0'
 
 gem 'turbolinks', '~> 5'
+gem 'active_storage_validations', '0.8.2'
 
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
