@@ -15,8 +15,8 @@ gem 'guard-rspec'
 
 gem 'webpacker', '~> 4.0'
 
-gem 'turbolinks', '~> 5'
 gem 'active_storage_validations', '0.8.2'
+gem 'turbolinks', '~> 5'
 
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
@@ -65,5 +65,7 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :production do
+  gem 'aws-sdk-s3', '1.46.0', require: false
+  gem 'cloudinary'
   gem 'pg'
 end

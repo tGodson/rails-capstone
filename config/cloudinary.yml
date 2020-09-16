@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: tgodson
+  api_key: '157337284863926'
+  api_secret: TIC4Y7kWEVAXlVj6NcTQt8-7guo
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: tgodson
+  api_key: '157337284863926'
+  api_secret: TIC4Y7kWEVAXlVj6NcTQt8-7guo
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: tgodson
+  api_key: '157337284863926'
+  api_secret: TIC4Y7kWEVAXlVj6NcTQt8-7guo
+  enhance_image_tag: true
+  static_file_support: false
