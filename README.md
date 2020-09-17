@@ -3,7 +3,7 @@
 This Ruby on Rails capstone is based on an app for grouping payments by goal with your family/friends.
 
 ## Built With
-
+- Rubocop
 - Ruby 2.7.1
 - Rails 6.0.3.2
 - VS Code
@@ -12,9 +12,17 @@ This Ruby on Rails capstone is based on an app for grouping payments by goal wit
 ## Prerequisites
 In order to make the program work, you need to have ruby interpreter installed in your system. You can get the latest version of ruby from [official website](https://www.ruby-lang.org/en/downloads/).
 
+## Screenshot
 
 ![Screenshot](app_screenshot.png)
 
+## Video presentation
+
+[Video presentation](https://www.loom.com/share/680758ba1eb64b9aa93180930152cc99)
+
+## Live Demo
+
+[View live demo of app](https://mysterious-waters-29267.herokuapp.com/)
 
 ## Getting Started 
 
@@ -40,9 +48,13 @@ $ rails db:migrate
 
 _you can create a user by clicking on the signup button at the top right of your screen and fill the sign up form
 
-_You can sign In by clicking on the sign In button at the top right of your screen and filling the form
+_Sign In by clicking on the sign In button at the top right of your screen and filling the form
 
-_You can create an transaction when you are logged In by clicking on the `ADD NEW` Butoon at the bottom of `my transction page` and fill the form
+_To create a transaction, click on `My Transactions` menu and click `ADD NEW` button and fill the form
+
+_Add  a group by clicking on the `All Groups` menu then on the `ADD NEW` button
+
+_To view all transactions of a group, click on the `VIEW` button of that group
 
 ## Author
 
@@ -64,3 +76,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
  
 - [The Odin Project](https://www.theodinproject.com/)
+-  Original design idea by[Gregoire Vella on Behance](https://www.behance.net/gregoirevella)

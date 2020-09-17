@@ -1,0 +1,96 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Handlee&family=Sniglet&display=swap');
+
+html,
+body {
+  background-color: #f1f3f2;
+  height: 100%;
+  font-family: sans-serif, 'proxima nova light';
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+img.icon {
+  height: 100px;
+  width: auto;
+}
+
+.navbar,
+.page-footer {
+  background-image: linear-gradient(to bottom right, #3778c2, #2e80bc);
+}
+
+.page-footer {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.custom {
+  background-color: #5fb523;
+  color: white;
+}
+
+.text-font {
+  font-family: 'Sniglet', cursive;
+}
+
+.card-bg {
+  background: white;
+  color: #4e5459;
+}
+
+.form-cate {
+  height: 200px;
+}
+
+.shdw {
+  -webkit-box-shadow: 5px 5px 15px 5px #000;
+  box-shadow: 5px 5px 15px 5px #000;
+}
+
+h1 {
+  font-family: sans-serif, 'proxima nova bold';
+}
+
+.text-white {
+  color: white !important;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}

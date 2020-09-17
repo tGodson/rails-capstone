@@ -1,0 +1,16 @@
+<div class = "container mt-3"> 
+   
+ <h3>All Groups</h3>
+    <%= link_to 'Create new Group', new_group_path, class: 'btn custom mb-2' %>
+  <% @groups.order("name asc").each do |group| %>
+  <div class = 'row'>
+    <div class = 'col-10 card p-3 text-center'>
+      
+        <p><%= image_tag group.icon, class: "icon" %></p>
+        <p><strong>Name:</strong> <%= group.name %></p>
+        <p><strong>Created At:</strong> <%= group.created_at %></p>
+        <p><%= link_to 'VIEW', group_path(group), class: 'btn custom' %> </p>
+    </div>
+  </div>
+   <% end %>
+</div>

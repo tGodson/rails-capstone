@@ -1,0 +1,23 @@
+<div class="container mt-3">
+    <%= link_to 'ADD NEW', new_transaction_path, class: 'btn custom mb-2' %>
+    <strong>TOTAL: $</strong><%= Transaction.where(:id => [@created_transactions] ).sum(:amount)%>
+    <h1>Transactions you created:</h1>
+    <% @created_transactions.order("id desc").each do |transaction| %>
+    <div class='row'>
+        <div class='col-10 card'>
+            <p><%= image_tag transaction.group.icon.url class: "icon" %></p>
+            <p><strong>Transaction name:</strong>
+                <%= transaction.name %>
+            </p>
+            <p><strong>Amount:</strong>
+                $<%= transaction.amount %>
+            </p>
+            <p><strong>created At:</strong>
+                <%= transaction.created_at %>
+            </p>
+            
+        </div>
+        
+    </div>
+    <% end %>
+</div>
